@@ -14,18 +14,19 @@ const Factorials = () => {
       }
       console.log(factorial({factInp}))
   return (<>
-    <div>Factorials
+    <div id='factorials'>
        
     </div>
-    <div>
-        <label id='factHead'>Factorial no.:</label><br />
-        <input type="number" placeholder='enter' value={factInp} onChange={(e)=>setFactInp(e.target.value)} />
-        <button onClick={(factInp)=>factorial(factInp)} >submit</button>
+    <div className='task'>
+        <label id='factHead'>Factorial Number </label><br />
+        <input id='num' type="number" placeholder='enter' value={factInp} onChange={(e)=>setFactInp(e.target.value)} />
+        <button onClick={(factInp)=>factorial(factInp)} id='submit'>submit</button>
     </div>
     <div>
         <h1>Result: {factorial({factInp})}</h1>
     </div>
-    <Link to="/"><button>return to home</button></Link>
+    
+    <div className='foot'><Link to="/"><button id='footer'>return to home</button></Link></div>
     </>
 
   )
