@@ -1,0 +1,11 @@
+.App {
+  text-align: center;
+}
+button {
+  margin-top: 20%;
+  font-size: 22px;
+}
+#factHead {
+  color: brown;
+  font-size: 60px;
+}
